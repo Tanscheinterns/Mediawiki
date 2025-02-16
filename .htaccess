@@ -1,0 +1,6 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Ensure the URL path is clean and routes correctly
+RewriteRule ^/?$ /index.php [L]
+RewriteRule ^([a-zA-Z0-9_]+)($|/) /index.php?title=$1 [L]
